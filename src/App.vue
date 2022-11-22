@@ -19,6 +19,7 @@ export default {
         <Button label="Contactanos" class="p-button-text"/>
 
 
+
       </ul>
     </nav>
   </header>
@@ -30,6 +31,9 @@ export default {
       <img class="mainBackground" src="/src/assets/images/home.png" alt="Home principal Profinding" />
       <div>
         <h1>La mejor opción para<br/>hacer tus compras<br/>rápidas y seguras</h1>
+        <h2>Descargalo de una vez:</h2>
+        <img alt="playstoref" src="/src/assets/images/playstore.png" />
+        <img alt="appstoref" src="/src/assets/images/appstore.png" />
       </div>
     </div>
   </div>
@@ -145,6 +149,7 @@ export default {
   </div>
 
 
+
   <div class="contactos">
     <h1>Contactanos</h1>
     <div class="container-C">
@@ -194,13 +199,59 @@ export default {
     </div>
   </div>
 
+  <div class="figma">
+    <a class="buttonmas" href="https://www.figma.com/file/mtN1WEcqOHYoau75ZxGwfQ/Mock-Up_Final?node-id=0%3A1&t=XX6TzUtnBUWKYkQz-0">Mockup</a>
+    <a class="buttonmas" href="https://www.figma.com/file/R42kGlSwZjBuCW6PEOQdZo/User-Flow?node-id=0%3A1&t=ohMD65ad0XtE4giC-0">User-Flow</a>
+  </div>
+
 
   <footer class="pieDePagina">
+
+
     <nav class="navMain-footer">
       <ul>
-        <Button label="Consent to data processing" class="p-button-text"/>
-        <Button label="Support" class="p-button-text"/>
-        <Button label="Privacy Policy" class="p-button-text"/>
+        <div class="c1">
+
+          <Button label="Nosotros" class="p-button-text"/>
+          <Button label="Privacidad" class="p-button-text"/>
+          <Button label="Terminos y condiciones" class="p-button-text"/>
+          <Button label="Contacto y Ayuda" class="p-button-text"/>
+          <Button label="Libro de reclamaciones" class="p-button-text"/>
+
+        </div>
+
+          <div class="c2">
+            <Button label="Inicio" class="p-button-text"/>
+            <Button label="Sobre nosotros" class="p-button-text"/>
+            <Button label="Servicios" class="p-button-text"/>
+            <Button label="Nuestro equipo" class="p-button-text"/>
+            <Button label="Planes" class="p-button-text"/>
+            <Button label="Contactanos" class="p-button-text"/>
+          </div>
+          <div class="c3">
+            <h2>Descargalo aqui:</h2>
+            <img alt="playstoref" src="/src/assets/images/playstore.png" />
+            <img alt="appstoref" src="/src/assets/images/appstore.png" />
+            <h2>Redes sociales:</h2>
+            <Button type="button" class="p-button-outlined p-button-success">
+              <img alt="logo" src="/src/assets/images/facebook.png" />
+            </Button>
+            <Button type="button" class="p-button-outlined p-button-success">
+              <img alt="logo" src="/src/assets/images/linkelind.png" />
+            </Button>
+            <Button type="button" class="p-button-outlined p-button-success">
+              <img alt="logo" src="/src/assets/images/twitter.png" />
+            </Button>
+            <Button type="button" class="p-button-outlined p-button-success">
+              <img alt="logo" src="/src/assets/images/google.png" />
+            </Button>
+            <Button type="button" class="p-button-outlined p-button-success">
+              <img alt="logo" src="/src/assets/images/instagram.png" />
+            </Button>
+
+          </div>
+
+
       </ul>
     </nav>
     <p>©Profinding  2022 |  Reservados todos los derechos.</p>
@@ -222,8 +273,9 @@ h1, h2, h3, p, Button{
   width: 100%;
   display: flex;
   align-items: center;
-  background: #8fe2fe;
+  background: #000000;
   height: 130px;
+
 }
 .cabecera img{
   margin-left: 3%;
@@ -239,7 +291,6 @@ h1, h2, h3, p, Button{
 
 
 
-
 .principal{
   display: flex;
   position: relative;
@@ -252,7 +303,7 @@ h1, h2, h3, p, Button{
   display: flex;
   position: absolute;
   margin-left: 5%;
-  margin-top: 10%;
+  margin-top: 5%;
   size: auto;
   flex-direction: column;
   justify-content: center;
@@ -260,6 +311,12 @@ h1, h2, h3, p, Button{
 .principal div h1{
   font-size: 92px;
   text-shadow: 3px 3px black;
+}
+.principal div img{
+  width: 25%;
+  height: 25%;
+  margin-left: 30%;
+  margin-top: 2%;
 }
 .principal div Button{
   width: 35%;
@@ -358,8 +415,20 @@ h1, h2, h3, p, Button{
   font-size: 18px;
   color: white;
 }
+.figma {
 
+  display:grid;
+  background: #8fe2fe;
+  justify-content:center;
 
+}
+.buttonmas{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #000000;
+ background: #D6A049;
+  text-decoration: none;
+}
 
 
 
@@ -402,13 +471,7 @@ h1, h2, h3, p, Button{
   height: 50px;
   margin:0;
 }
-.orange-box3{
-  border-radius: 25px 25px 0px 0px;
-  background: #F1C94E;
-  width: 100%;
-  height: 50px;
-  margin:0;
-}
+
 .cajaDeContenidos{
   margin: 1% 10% 15% 10%;
   color: black;
@@ -444,46 +507,6 @@ h1, h2, h3, p, Button{
 
 
 
-
-.priceCalculator{
-  background: #8fe2fe;
-  padding: 3%;
-}
-.container-PC{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.priceCalculator-Container{
-  width: 100%;
-  height: 500px;
-  border-radius: 30px;
-  display: inline-block;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.orange-box{
-  border-radius: 25px 25px 0px 0px;
-  background: #D6A049;
-  width: 100%;
-  height: 50px;
-  margin:0;
-}
-.cajaDeContenidos-container{
-  background: white;
-  width: 100%;
-  height: 500px;
-  border-radius: 0 0 30px 30px;
-  display: flex;
-  flex-direction: row;
-}
-.cajaDeContenidos-PC{
-  margin: 1% 10% 15% 10%;
-  color: black;
-  flex: 50%;
-  display: flex;
-  flex-direction: column;
-}
 .cajaDeContenidos-PC h1{
   font-size: 24px;
   font-weight: bold;
@@ -504,14 +527,7 @@ h1, h2, h3, p, Button{
   margin: 5% 0 5% 0;
   color: black;
 }
-.cajaDeContenidos-PC2{
-  margin: 1% 10% 15% 10%;
-  color: black;
-  flex: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .cajaDeContenidos-PC2 h1{
   font-size: 36px;
   font-weight: bold;
@@ -560,7 +576,7 @@ h1, h2, h3, p, Button{
   justify-content: center;
   gap: 100px;
   padding: 0px 200px 0px 200px;
-  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-template-columns: repeat(2,minmax(0,1fr));
 }
 .contenedorNuestroEquipo{
   display: flex;
@@ -594,6 +610,7 @@ h1, h2, h3, p, Button{
 .contactos h1{
   color: #D6A049;
   text-align: center;
+  font-size: 70px;
 }
 .container-C{
   display: flex;
@@ -669,11 +686,31 @@ h1, h2, h3, p, Button{
 
 
 
+.pieDePagina c1 {
+  background: #D6A049;
+  display:grid;
+  padding: 0px 30px 40px 10px;
+  grid-template-columns: repeat(3,minmax(0,1fr));
 
-.pieDePagina{
-  background: #8fe2fe;
 }
+.c1{
+  display: flex;
+ align-items:center;
+}
+.c2 {
+  display: flex;
+  align-items: center;
+
+}
+
+.c3 img {
+  width: 30%;
+  align-items:center;
+}
+
+
 .pieDePagina p{
+
   text-align: center;
   color: #D6A049;
 }
@@ -688,9 +725,7 @@ h1, h2, h3, p, Button{
 
 @media  screen and (max-width: 600px) {
 
-  .navMain-mobile{
-    display:  none !important;
-  }
+
 
   .menuNavegacionPrincipal{
     display:block !important;
@@ -705,6 +740,7 @@ h1, h2, h3, p, Button{
   .navMain{
     margin:0;
     text-align:center;
+
   }
 
   .navMain ul{
@@ -721,14 +757,7 @@ h1, h2, h3, p, Button{
     width: 100%;
   }
 
-  .priceCalculator-Container{
-    height:auto;
-  }
 
-  .cajaDeContenidos-container{
-    height: auto;
-    flex-direction: column;
-  }
 
   .container-OT{
     padding: 10px;
